@@ -50,7 +50,7 @@ defaults:
       path: "_pages"
     values:
       layout: page
-      color: primary
+      bg-color: primary
       
 # Syntax
 markdown: kramdown
