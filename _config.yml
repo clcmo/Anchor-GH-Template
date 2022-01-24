@@ -9,6 +9,7 @@ email: 'contato@studiourbanna.com.br'
 mailchimp-list: ''
 donation-link: https://doe.camilaloliveira.com.br
 download-link: #
+learn-more-link: 'https://clcmo.github.io/Anchor-GH-Template/docs.html'
 
 include: ["_pages"]
 permalink: /:title/
