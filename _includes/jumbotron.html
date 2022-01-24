@@ -1,7 +1,12 @@
 <!--------------------------------------
 HEADER
 --------------------------------------->
-<div class="jumbotron jumbotron-lg jumbotron-fluid mb-0 pb-3 bg-primary position-relative">
+<div class="jumbotron jumbotron-lg jumbotron-fluid mb-0 pb-3 
+{% if page.color == "" %} bg-primary {% else %} bg-{page.color} {% endif %} position-relative" 
+ {% unless page.background == "" %}
+    style="background-size:cover; background-image:url({page.background});"
+ {% endunless %}
+>
     {% if page.layout == "landing" %}
     <div class="container-fluid text-white h-100">
         <div class="d-lg-flex align-items-center justify-content-between text-center pl-lg-5">
