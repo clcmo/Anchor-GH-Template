@@ -1,11 +1,8 @@
 <!--------------------------------------
 HEADER
 --------------------------------------->
-<div class="jumbotron jumbotron-lg jumbotron-fluid mb-0 pb-3 
-{% if page.color == "" %} bg-primary {% else %} bg-{page.color} {% endif %} position-relative" 
- {% unless page.background == "" %}
-    style="background-size:cover; background-image:url({page.background});"
- {% endunless %}
+<div class="jumbotron jumbotron-lg jumbotron-fluid mb-0 pb-3 bg-{page.color} position-relative" 
+{% if page.backgroung contains "://" %}style="background-size:cover; background-image:url({page.background});"{% endif %}
 >
     {% if page.layout == "landing" %}
     <div class="container-fluid text-white h-100">
