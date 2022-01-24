@@ -4,7 +4,7 @@ NAVBAR
 <nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
         {% unless page.url == "/docs.html" %}
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="{{site.baseurl}}/index.html">
                 <i class="fas fa-anchor mr-2"></i> <strong>{{site.title}}</strong> Template
             </a>
         {% endunless %}
@@ -14,26 +14,26 @@ NAVBAR
         <div class="navbar-collapse collapse" id="navbarColor02" style="">
             <ul class="navbar-nav mr-auto d-flex align-items-center">
                 <li class="nav-item">
-                <a class="nav-link" href="./index.html">Intro <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{site.baseurl}}/index.html">Intro <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Examples </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./landing.html">Home Landing</a>
-                    <a class="dropdown-item" href="./login.html">User Login</a>
-                    <a class="dropdown-item" href="./blog.html">Blog Index</a>
-                    <a class="dropdown-item" href="./page.html">Sample Page</a>
+                    <a class="dropdown-item" href="{{site.baseurl}}/landing.html">Home Landing</a>
+                    <a class="dropdown-item" href="{{site.baseurl}}/login.html">User Login</a>
+                    <a class="dropdown-item" href="{{site.baseurl}}/blog.html">Blog Index</a>
+                    <a class="dropdown-item" href="{{site.baseurl}}/page.html">Sample Page</a>
                 </div>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="docs.html">Docs</a>
+                <a class="nav-link" href="{{site.baseurl}}/docs.html">Docs</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
                 <li class="nav-item">
                 <span class="nav-link" href="#">
-                <a class="btn btn-info btn-round shadow" href="#" data-toggle="modal" data-target="#modal_newsletter"><i class="fas fa-cloud-download-alt"></i> Download UI Kit <a href="#" class="downloadzip" class="hidden"></a>
+                <a class="btn btn-info btn-round shadow" href="#" data-toggle="modal" data-target="#modal_newsletter"><i class="fas fa-cloud-download-alt"></i> Download UI Kit <a href="{{site.download-link}}" class="downloadzip" class="hidden"></a>
                 </a>
                 </span>
                 </li>

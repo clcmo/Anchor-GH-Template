@@ -3,11 +3,12 @@ title: 'anchor'
 description: 'github pages template'
 logo: 'media/images/logo.png'
 favicon: '/assets/img/favicon.ico'
-baseurl: ''
+baseurl: 'https://clcmo.github.io/Anchor-GH-Template/'
 disqus: ''
 email: 'contato@studiourbanna.com.br'
 mailchimp-list: ''
 donation-link: https://doe.camilaloliveira.com.br
+download-link: #
 
 include: ["_pages"]
 permalink: /:title/
