@@ -1,5 +1,5 @@
 # Aqui ficarão as configurações sobre a página
-name: 'anchor'
+title: 'anchor'
 description: 'github pages template'
 logo: 'media/images/logo.png'
 favicon: '/assets/img/favicon.ico'
