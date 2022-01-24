@@ -1,6 +1,6 @@
 # Aqui ficarão as configurações sobre a página
-name: 'biblioteca espírita'
-description: 'Soluções Web, Mobile e Mídias'
+name: 'anchor'
+description: 'github pages template'
 logo: 'media/images/logo.png'
 favicon: 'media/images/logo.png'
 baseurl: ''
