@@ -3,7 +3,9 @@ NAVBAR
 --------------------------------------->
 <nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><i class="fas fa-anchor mr-2"></i><strong>Anchor UI</strong> Kit</a>
+        {% if page.url != "/docs.html" %}
+            <a class="navbar-brand" href="./index.html"><i class="fas fa-anchor mr-2"></i><strong>Anchor UI</strong><i class="fab fa-github"></i> Pages</a>
+        {% end if %}
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +31,7 @@ NAVBAR
             <ul class="navbar-nav ml-auto d-flex align-items-center">
                 <li class="nav-item">
                 <span class="nav-link" href="#">
-                <a class="btn btn-info btn-round shadow" href="#" data-toggle="modal" data-target="#modal_newsletter"><i class="fas fa-cloud-download-alt"></i> Download UI Kit <a href="https://github.com/wowthemesnet/Anchor-Bootstrap-UI-Kit/archive/master.zip" class="downloadzip" class="hidden"></a>
+                <a class="btn btn-info btn-round shadow" href="#" data-toggle="modal" data-target="#modal_newsletter"><i class="fas fa-cloud-download-alt"></i> Download UI Kit <a href="#" class="downloadzip" class="hidden"></a>
                 </a>
                 </span>
                 </li>
