@@ -17,11 +17,18 @@ FOOTER
             </div>
             {% for category in site.categories %}
             <div class="col-6 col-md">
-                <h5 class="mb-4 text-white">{{category}}</h5>
+                <h5 class="mb-4 text-white">{{ category[0] }}</h5>
+                
                 <ul class="list-unstyled text-small">
-                    {% for post in site.categories.{{category}} %}  
-                    <li><a class="text-muted" href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a></li>
+                    {% assign pages_list = category[1] %}
+                    {% for post in pages_list %}
+                    {% if post.title != null %}
+                    {% if group == null or group == post.group %}
+                        <li><a class="text-muted" href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a></li>
+                    {% endif %}
+                    {% endif %}
                     {% endfor %}
+                    {% assign pages_list = nil %}
                 </ul>
             </div>
             {% endfor %}
