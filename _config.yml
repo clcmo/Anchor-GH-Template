@@ -1,8 +1,8 @@
 # Aqui ficarão as configurações sobre a página
 title: 'anchor'
 description: 'github pages template'
-logo: 'media/images/logo.png'
-favicon: '/assets/img/favicon.ico'
+logo: './assets/img/favicon.ico'
+favicon: './assets/img/favicon.ico'
 baseurl: 'https://clcmo.github.io/Anchor-GH-Template'
 disqus: ''
 email: 'contato@studiourbanna.com.br'
