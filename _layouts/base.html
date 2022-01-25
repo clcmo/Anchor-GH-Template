@@ -1,0 +1,16 @@
+{% include header.html %}
+{% if page == "/docs.html" %}
+{% include coffee.html%}
+<main class="content-withfixedsidebar">
+{% include navbar.html %}
+{% include jumbotron.html %}
+{% else %}
+{% include navbar.html %}
+{% include jumbotron.html %}
+{% endif %}
+
+
+{{content}}
+{% unless page == "/docs.html" %}
+{% include footer.html %}
+{% endunless %}
