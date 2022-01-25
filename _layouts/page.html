@@ -1,13 +1,7 @@
 ---
 layout: base
 ---
-<!--------------------------------------
-MAIN
---------------------------------------->
-<div class="container pt-5 pb-5" data-aos="fade-up">
-    {{content}}
-</div>
+{{content}}
 {% unless page.url == "/contact.html"%}
 {% include newsletter.html %}
 {% endunless %}
-{% include donate.html %}

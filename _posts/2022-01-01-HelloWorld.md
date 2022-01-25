@@ -1,7 +1,6 @@
 ---
 title: "Example Post"
-layout: post 
-categories: example
+categories: Example
 tags: [jekyll, gh-pages]
 ---
 

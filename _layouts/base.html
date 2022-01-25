@@ -1,16 +1,26 @@
 {% include header.html %}
+
 {% if page == "/docs.html" %}
 {% include coffee.html%}
 <main class="content-withfixedsidebar">
 {% include navbar.html %}
 {% include jumbotron.html %}
+{{content}}
+{% include donate.html %}
+{% include menu-footer.html %}
+</main>
+{% include script-footer.html %}
+
 {% else %}
 {% include navbar.html %}
 {% include jumbotron.html %}
-{% endif %}
-
-
-{{content}}
-{% unless page == "/docs.html" %}
+<!--------------------------------------
+MAIN
+--------------------------------------->
+<div class="container pt-5 pb-5" data-aos="fade-up">
+    {{ content }}
+</div>
+{% include donate.html %}
 {% include footer.html %}
-{% endunless %}
+
+{% endif %}
