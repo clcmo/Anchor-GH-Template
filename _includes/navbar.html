@@ -2,11 +2,11 @@
 NAVBAR
 --------------------------------------->
 {% if page.url == "/404.html" %}
-<nav class="topnav navbar navbar-expand-lg navbar-dark bg-dark fixed-top"></nav>
+<nav class="topnav navbar navbar-expand-lg navbar-dark fixed-top bg-dark fixed-top">
 {% elsif page contains background %}
-<nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top"></nav>
+<nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 {% else %}
-<nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top"></nav>
+<nav class="topnav navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 {% endif %}
     <div class="container-fluid">
         {% unless page.url == "/docs.html" %}
