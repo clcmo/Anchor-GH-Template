@@ -50,6 +50,7 @@ defaults:
       path: "_pages"
     values:
       layout: page
+      permalink: /:title/
       
 # Syntax
 markdown: kramdown
