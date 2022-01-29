@@ -9616,6 +9616,10 @@ article {
   [data-aos].aos-animate {
     pointer-events: auto; }
 
+footer {
+  padding: 1.5em 0 1.5em 0;
+}
+
 footer.bg-black a {
   color: #fff; }
 
