@@ -1,12 +1,4 @@
-{% include header.html %}
-{% include navbar.html %}
-{% include jumbotron.html %}
-<!--------------------------------------
-MAIN
---------------------------------------->
-<div class="container pt-5 pb-5">
-    <p>{{ content }}</p>
-    {% include newsletter.html %}
-</div>
-{% include donate.html %}
-{% include footer.html %}
+---
+layout: base
+---
+{{content}}
