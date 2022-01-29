@@ -19,6 +19,13 @@ MAIN
 --------------------------------------->
 <div class="container pt-5 pb-5" data-aos="fade-up">
     {{ content }}
+    {% if layout  == "page" %}
+    {% unless page.url == "/contact.html"%}
+    {% include newsletter.html %}
+    {% endunless %}
+    {% elsif layout == "post"  %}
+    {% include newsletter.html %}
+    {% endif %}
 </div>
 {% include donate.html %}
 {% include footer.html %}
