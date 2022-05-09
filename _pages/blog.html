@@ -6,7 +6,8 @@ permalink: "/blog.html"
 
 <section class="pt-5 pb-5" data-aos="fade-down">
 <div class="container">
-    
+   
+	{% for post in pages_list %}
     <!-- Featured -->
 	<div class="row">        
 		<div class="col-lg-6">
@@ -47,8 +48,10 @@ permalink: "/blog.html"
 		</div>
 	</div>
     <!-- End Featured -->
+	{% endfor %}
     
     <!-- Blog Cards -->
+	{% for post in pages_list %}
 	<div class="row gap-y">
 		<div class="col-md-6 col-lg-4">
 			<div class="card">
@@ -123,6 +126,7 @@ permalink: "/blog.html"
 			</div>
 		</div>
 	</div>
+	{% endfor %}
     <!-- End Blog Cards -->
     
 </div>
